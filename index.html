@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //  Sum 
+      var num= [1, 2, 3, 4, 5];
+      var sum = num.reduce(function (total, num) {
+        return total + num;
+          }, 0);
+
+         console.log("Sum of numbers:", sum);
+
+
+          //  Average
+          let array=[3,4,5,6,7,8]
+
+       let average = array.reduce((total, num, index, arr) =>{
+        return total + num / arr.length;
+          }, 0);
+
+         console.log("Average of numbers:", average); 
+
+           //  Filter Adults
+               var people = [
+              { name: "John", age: 17 },
+              { name: "Jane", age: 22 },
+             { name: "Jim", age: 15 },
+            { name: "Jack", age: 19 }
+        ];
+
+             var adults = people.filter( (person)=> {
+            return person.age >= 18;
+          });
+            console.log("Adults:", adults);
+
+
+    </script>
+</body>
+</html>
